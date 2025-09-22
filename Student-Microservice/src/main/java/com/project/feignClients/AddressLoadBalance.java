@@ -8,9 +8,12 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(value="api-gateway")
-public interface AddressFeignClient {
+@LoadBalancerClient(value="address-service")
+public class AddressLoadBalance {
 
-    @GetMapping("/getById/{id}")
-    public Address getById(@PathVariable long id) ;
+    @LoadBalanced
+    @Bean
+    public Feign.Builder feignBuilder(){
+        return feign.builder();
+    }
 }
