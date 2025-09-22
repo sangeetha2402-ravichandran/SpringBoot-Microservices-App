@@ -48,6 +48,38 @@ This project demonstrates a **microservices architecture** using Spring Boot wit
 
 ---
 
+## Eureka Server
+
+![Repository Image](EurekaServer.png)
+
+Eureka Server is a REST-based service registry used in microservices architectures to enable service discovery. It acts as a naming server where client services register themselves and query for other services to discover their network locations dynamically.
+
+### Key Features
+
+- **Service Registration:** Client microservices register with the Eureka Server upon startup.
+- **Service Discovery:** Clients query the Eureka Server to find instances of other services.
+- **Health Checks:** Eureka monitors registered services and removes unavailable instances for fault tolerance.
+- **Load Balancing Integration:** Works seamlessly with Netflix Ribbon, Spring Cloud LoadBalancer, etc.
+- **Highly Available:** Can be run in a cluster of servers for redundancy.
+
+### How it Works
+
+1. **Service Registration:** Services send heartbeats to Eureka to maintain their presence.
+2. **Discovery Client:** When calling a dependent service, clients query Eureka to get the currently available instances.
+3. **Fault Tolerance:** Eureka removes instances that fail to send heartbeats and updates the clients accordingly.
+
+### Typical Use Case
+
+- In a microservices setup, each service registers with Eureka Server.
+- Load balancers and API gateways rely on Eureka to route requests to live services dynamically instead of hardcoding URLs.
+
+---
+
+To see the full implementation, clone the repository and check the service registration and discovery configuration.
+
+![Repository Image](images/your-repo-image.png)
+
+
 ## 📦 Setup & Run
 
 ### 1. Clone Repository
@@ -57,6 +89,8 @@ This project demonstrates a **microservices architecture** using Spring Boot wit
 git clone https://github.com/sangeetha2402-ravichandran/SpringBoot-Microservices-App.git
 
 ---
+
+
 
  🏗 Architecture Diagram
 
