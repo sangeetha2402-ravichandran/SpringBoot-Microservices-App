@@ -12,7 +12,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @SpringBootApplication
 @EnableFeignClients(basePackages = "com.project")
-
+@EnableEurekaClient
 public class StudentServiceApplication {
 
 
