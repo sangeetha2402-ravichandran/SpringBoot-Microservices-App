@@ -25,7 +25,40 @@ This project demonstrates a **microservices architecture** using Spring Boot wit
 
 ---
 
-## 🏗 Architecture Diagram
+## ⚡ Features
+
+* ✅ Spring Boot Microservices
+* ✅ Inter-service communication using OpenFeign & WebClient
+* ✅ PostgreSQL integration for persistent storage
+* ✅ CRUD APIs for Student and Address
+* ✅ Exception Handling & Validation
+
+---
+
+## 🚀 Tech Stack
+
+| Component     | Technology           |
+| ------------- | -------------------- |
+| Framework     | Spring Boot 3.3.x    |
+| Service Calls | OpenFeign, WebClient |
+| Database      | PostgreSQL           |
+| Build Tool    | Maven                |
+| Java Version  | 17+                  |
+| API Testing   | Postman / Swagger    |
+
+---
+
+## 📦 Setup & Run
+
+### 1. Clone Repository
+
+
+```bash
+git clone https://github.com/sangeetha2402-ravichandran/SpringBoot-Microservices-App.git
+
+---
+
+ 🏗 Architecture Diagram
 
 ```text
 +----------------+         +----------------+
@@ -34,5 +67,6 @@ This project demonstrates a **microservices architecture** using Spring Boot wit
         |                         |
         v                         v
    PostgreSQL DB               PostgreSQL DB
+
 
 
