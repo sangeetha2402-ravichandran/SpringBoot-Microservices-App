@@ -60,7 +60,7 @@ git clone https://github.com/sangeetha2402-ravichandran/SpringBoot-Microservices
 
  🏗 Architecture Diagram
 
-```text
+
 +----------------+         +----------------+
 | Student Service| <-----> | Address Service|
 +----------------+         +----------------+
